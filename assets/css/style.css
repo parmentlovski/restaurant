@@ -1,0 +1,13 @@
+/* ------------------------ AJOUT POLICE  ------------------------ */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.ttf"); }
+@font-face {
+  font-family: 'Yeseva';
+  src: url("../fonts/YesevaOne-Regular.ttf"); }
+@font-face {
+  font-family: 'Open';
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+/* ------------------------ GENERAL ------------------------ */
+
+/*# sourceMappingURL=style.css.map */
