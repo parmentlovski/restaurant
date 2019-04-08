@@ -1,3 +1,33 @@
+/* ------------------------ AJOUT VARIABLE  ------------------------ */
+
+// Boutons
+$color-button: white;
+$size-button: 18px;
+$font-button: 'Lato';
+
+// H2
+$font-h2: 'Yeseva';
+$size-h2: 36px;
+
+//P section
+$font-p: 'Lato';
+$size-p: 16px;
+
+//H3 
+$font-h3: 'Yeseva';
+$size-h3: 21px;
+$color-h3: #fefefe;
+
+//P footer 
+$font-footerp: 'Open';
+$size-footerp: 16px;
+
+//footer bold 
+$font-bold: 'Open';
+$weight-bold: 700;
+$size-bold: 16px;
+$color-bold: white;
+
 
 /* ------------------------ AJOUT POLICE  ------------------------ */
 
@@ -11,7 +41,7 @@
     src: url("../fonts/YesevaOne-Regular.ttf");
 }
 
-@font-face { // OPEN - REGULAR / ITALIC (LIGHT OU R ??) / BOLD
+@font-face { // OPEN - REGULAR / ITALIC / BOLD
     font-family: 'Open';
     src: url("../fonts/OpenSans-Regular.ttf");
 }
@@ -26,7 +56,452 @@
 
 /* ------------------------ GENERAL ------------------------ */
 
+* {
+    margin: 0;
+    padding: 0; 
+}
 
-// nav {
-//     font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
-// }
+p {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;  
+}
+/* ------------------------ HEADER ------------------------ */
+
+header {
+    background: url("../pictures/header_background.jpg") no-repeat right;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 750px; // facilite le responsive design
+
+
+    #promo { // section englobant nav et contenant header
+        margin: 0 10.93%;
+        min-height: 750px;
+
+        nav {
+            height: 92px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+             
+            ul { // menu principal 
+                display: flex;
+                flex-direction: row;
+                align-items: center ;
+                justify-content: space-between;
+                font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
+                font-weight: 700;
+                font-size: 21px;
+                width: 58%;      
+
+                li { 
+                  
+
+                    a {
+                        color: white;
+                    }            
+
+                    a:hover {
+                        border-top: 2px solid white;
+                        padding-top: 20px;
+                    }
+                }
+            }
+
+            ol { // réseaux sociaux 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                width: 8.75%;
+
+                li {                 
+                    a {  
+                        color: #dab33c;
+
+                        :hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    
+        #header_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;    
+            height: 658px;
+            
+            #header_center { 
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                h1 {
+                    font-family: 'yesava';
+                    font-size: 90px;
+                    text-align: center;
+                    color: #f4F3F3;
+                }
+
+                #header_buttons { // pour disposer les deux buttons
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    button { // défini les boutons
+                        font-family: $font-button;
+                        font-size: $size-button;
+                        color: $color-button;
+                        padding: 14px 28px;
+                    }
+                    
+                    .button_book {
+                        background-color: rgba(0, 0, 0, 0.5);
+                        border: 1px solid black;
+                        margin-right: 30px;
+                    }
+
+                    .button_menu {
+                        background-color: rgba($color: #ffff, $alpha: 0.5);
+                        border: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------ ABOUT ------------------------ */
+
+
+#about { 
+    background-image: url("../pictures/about_reservations_background.png");
+    background-color: #fefefe;
+    min-height: 700px;
+    padding: 0 10.93%;
+
+    #about_content { // englobe les deux div
+        min-height: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        #about_right { // section de droite 
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                font-family: $font-h2;
+                font-size: $size-h2;
+                color: #cc9900;
+            }
+
+            p {
+                font-family: $font-p; 
+                font-size: $size-p;
+
+                #about_text_center { // centrer le span
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            img {
+                // CSS GRIND POUR CENTER ?
+            }
+        }
+    }
+}
+
+/* ------------------------ INGREDIENTS ------------------------ */
+
+#ingredients {
+    min-height: 760px;
+    background-image: url('../pictures/ingredients_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 10.93%;
+    display: flex;
+    justify-content: end; //place le contenu ingredients a droite horizontalement
+    align-items: center; // center verticalement;
+
+
+    #ingredients_content { // section englobant texte et image
+        min-height: 560px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        color: white;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #ingredients_box { 
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+
+
+            h2 {
+                font-family: $font-h2;
+                font-size: $size-h2;    
+            }
+
+            p {
+                font-family: $font-p;
+                font-size: $size-p;
+
+                #ingredients_text_center {
+                    display: block;
+                    text-align: center;
+                }
+
+            }
+
+            #ingredients_list {
+                width: 100%;
+
+                ul {    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                   
+
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+        }                
+    }
+}
+
+/* ------------------------ REVIEWS ------------------------ */
+
+#reviews {
+    background-image: url('../pictures/reviews_background.jpg');
+    min-height: 760px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 10.93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    #reviews_content { // applique background image
+        background-image: url('../pictures/reviews_background_text.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+        width: 46.9%;
+        opacity: 0.9;
+
+        #reviews_background_color { // applique background color
+            background-color: rgba($color: #000000, $alpha: 0.9);
+            min-height: 500px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            #reviews_box {
+                height: 360px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                
+                h2 {
+                    font-family: $font-h2;
+                    font-size: $size-h2;
+                }
+
+                #quote {
+                    font-family: $font-p;
+                    font-size: 25px;
+                    width: 80%;
+                }
+
+                // #quote:before {
+                //     content: url('../pictures/reviews_quote.png');
+                //     margin-left: 15px;
+                //     margin-bottom: 22px;
+                //     display: block;
+                // }
+
+                #reviews_text_end {
+                    text-align: center;
+                    font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------ RESERVATIONS ------------------------ */
+
+#reservations {
+    background-image: url('../pictures/about_reservations_background.png');
+    min-height: 710px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    #reservations_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10.93%;
+        min-height: 650px;
+
+        #reservations_left {
+            display: flex;  
+            flex-direction: row;
+            width: 55%;
+            height: 520px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #reservations_right {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 520px;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-family: $font-h2;
+                font-size: $size-h2;
+                color: #cc9900;
+            }
+
+            p {
+                font-family: $font-p;
+                font-size: $size-p;
+                color: #4c4c4c;
+            }
+
+            .reservations_form {
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+footer {
+    min-height: 320px;
+    background-color: #191919;
+    padding: 0 10.93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    #column_left {
+        width: 34%;
+
+    }
+
+    #column_center, 
+    #column_right {
+        width: 21%;
+
+        ul {
+
+            li {
+                a {
+                    color: #fefefe;
+
+                    :hover {
+                        color: #cc9900;
+                    } 
+                }   
+            }
+        }
+    }
+
+
+    #column_left, 
+    #column_center, 
+    #column_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+
+        h3 {
+            font-family: $font-h3;
+            font-size: $size-h3;
+            color: $color-h3;
+        }
+
+        p {
+            font-family: $font-footerp;
+            font-size: $size-footerp;
+            color: white;
+        }
+
+        .footer_bold {
+            font-family: $font-bold;
+            font-weight: $weight-bold;
+            font-size: $size-bold;
+            color: $color-bold;
+        }
+    }   
+
+    #column_center {
+      
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+        }
+    }
+
+    #column_right {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 40%;
+        }
+    }
+}

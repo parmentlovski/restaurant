@@ -19,15 +19,165 @@
     <title>Restaurant - Lamdba</title>
     <!-- AJOUT POLICES ET ICONES   -->
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700" rel="stylesheet"> <!-- GENTIUM BOOK BASIC 260 ko-->
-    <!--  CSS  -->
+    <!-- BOOTSTRAP & CSS  -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 
 <body>
-    
+ 
     <header>
-        <h1>SALUT LES COPAINS</h1>
+        <div id="promo">
+
+            <nav>
+                <img src="assets/pictures/header_logo.png" alt="Le logo du restaurant Lambda" width="156" height="92">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#ingredient">Igredients</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                    </ul>                
+
+                    <ol>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    </ol>
+            </nav>
+
+            <div id="header_content">
+                <div id="header_center">
+                    <h1>the right ingredients <br>for the right food</h1>
+                    <img src="assets/pictures/header_divider.png" alt="Image d'un divider" width="232" height="43">
+                    <div id="header_buttons">
+                        <button type="button" class="button_book">BOOK A TABLE</button>
+                        <button type="button" class="button_menu">SEE THE MENU</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <section id="about">
+        <div id="about_content">
+            <div id="about_right">
+                <h2>Just the right food</h2>
+                <img src="assets/pictures/about_reservations_divider.png" alt="Image du divider de la section about" width="247" height="24">
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                    Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                    <br><span id="about_text_center">Stop in today and check us out!</span></p>
+                <img src="assets/pictures/about_cook.png" alt="Image du cuisinier du restaurant Lambda" width="219" height="221"> 
+            </div>
+            <div id="about_left">
+                <img src="assets/pictures/about_plate.png" alt="Photo d'une assiette" width="621" height="625">
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients">
+        <div id="ingredients_content">
+            <div id="ingredients_box">
+                <h2>Fine ingredients</h2>
+                <img src="assets/pictures/ingredients_reviews_divider.png" alt="Image du divider de la section ingredients" width="247" height="24">
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                    Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                    <br><span id="ingredients_text_center">Stop in today and check us out!</span></p>
+                    <div id="ingredients_list">
+                        <ul>
+                            <li><img src="assets/pictures/ingredients_corn.png" alt="Image représentant du blé" width="110" height="110"></li>
+                            <li><img src="assets/pictures/ingredients_red.png" alt="Image représentant de l'orge" width="110" height="110"></li>
+                            <li><img src="assets/pictures/ingredients_bread.png" alt="Image représentant du pain" width="110" height="110"></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div id="reviews_content">
+            <div id="reviews_background_color">
+                <div id="reviews_box">
+                    <h2>Guest Reviews</h2>
+                    <img src="assets/pictures/ingredients_reviews_divider.png" alt="Image du divider de la secyion reviews" width="247" height="24">
+                    <p id="quote">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                        Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                        Stop in today and check us out!</p>
+                    <p id="reviews_text_end">- food inc, New York</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservations">
+        <div id="reservations_content">
+            <div id="reservations_left">
+                <img src="assets/pictures/reservations_meal_1.jpg" alt="Image représentant un premier plat du restaurant Lambda" width="270" height="570">
+                <img src="assets/pictures/reservations_meal_2.jpg" alt="Image représentant un deuxième plat du restaurant Lambda" width="270" height="570">
+            </div>
+            <div id="reservations_right">
+                <h2>Just the right foot</h2>
+                <img src="assets/pictures/about_reservations_divider.png" alt="Image du divider de la section reservations" width="247" height="24">
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                    Perfect materials and freshly baked food. <br><br>
+                Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
+                    Perfect materials and freshly baked food.</p>
+                <form action="anyway.php" method="post" id="reservations_form">
+                    <div class="reservations_form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="your name*">
+                        <label for="email">Name</label>
+                        <input type="email" name="email" id="user_email" placeholder="your email*">
+                    </div>
+                    <div class="reservations_form">
+                        <label for="date">Date</label>
+                        <input type="text" name="date" id="user_date" placeholder="date *">
+                        <label for="party_number">Party number</label>
+                        <input type="text" name="party_number" id="user_number" placeholder="party number *">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Book now!">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="column_left">
+            <h3>About Us</h3>
+            <img src="assets/pictures/footer_divider.png" alt="Image du divider du footer" width="199" height="19">
+            <p>Lambda's new and expanded Chelsea location represents a truly authentic <span class="footer_bold">Greek</span> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.
+                    <br>Lamda the best restaurant in town</p>
+        </div>
+        <div id="column_center">
+            <h3>Opening Hours</h3>
+            <img src="assets/pictures/footer_divider.png" alt="Image du divider du footer" width="199" height="19">
+            <p><span class="footer_bold">Mon-Thu:</span> 7:00am-8:00pm 
+            <span class="footer_bold">Fri-Sun:</span> 7:00am-10:00pm</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-cc-amex"></i></a></li>
+                <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                <li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+            </ul>
+        </div>
+        <div id="column_right">
+            <h3>Our Location</h3>
+            <img src="assets/pictures/footer_divider.png" alt="Image du divider du footer" width="199" height="19">
+            <p class="footer_bold">19th Paradise Street Sitia
+            128 Meserole Avenue</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="far fa-poll"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
