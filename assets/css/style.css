@@ -1,3 +1,4 @@
+/* ------------------------ DEFINITION BREAKPOINT  ------------------------ */
 /* ------------------------ AJOUT VARIABLE  ------------------------ */
 /* ------------------------ AJOUT POLICE  ------------------------ */
 @font-face {
@@ -29,38 +30,90 @@ header {
   background-size: cover;
   background-attachment: fixed;
   min-height: 750px; }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    header {
+      background-attachment: initial; } }
   header #promo {
-    margin: 0 10.93%;
     min-height: 750px; }
     header #promo nav {
-      height: 92px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      header #promo nav ul {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+      min-height: 92px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        header #promo nav {
+          min-height: 70px; } }
+      @media only screen and (max-width: 767px) {
+        header #promo nav {
+          position: initial;
+          padding-top: 10px; } }
+      header #promo nav #nav_content {
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
-        font-weight: 700;
-        font-size: 21px;
-        width: 58%; }
-        header #promo nav ul li a {
-          color: white; }
-        header #promo nav ul li a:hover {
-          border-top: 2px solid white;
-          padding-top: 20px; }
-      header #promo nav ol {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 8.75%; }
-        header #promo nav ol li a {
-          color: #dab33c; }
-          header #promo nav ol li a :hover {
+        margin: 0 10.93%; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          header #promo nav #nav_content {
+            margin: 0 2%; } }
+        @media only screen and (max-width: 767px) {
+          header #promo nav #nav_content {
+            margin: 0 2%; } }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          header #promo nav #nav_content img {
+            width: 100px;
+            height: 70px; } }
+        @media only screen and (max-width: 767px) {
+          header #promo nav #nav_content img {
+            width: 75px;
+            height: 50px; } }
+        header #promo nav #nav_content ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
+          font-weight: 700;
+          font-size: 21px;
+          width: 58%; }
+          @media screen and (min-width: 768px) and (max-width: 1200px) {
+            header #promo nav #nav_content ul {
+              font-size: 18px;
+              width: 70%; } }
+          @media only screen and (max-width: 767px) {
+            header #promo nav #nav_content ul {
+              display: flex;
+              justify-content: center; } }
+          @media only screen and (max-width: 767px) {
+            header #promo nav #nav_content ul li {
+              display: none; } }
+          header #promo nav #nav_content ul li a {
             color: white; }
+          header #promo nav #nav_content ul li a:hover {
+            border-top: 2px solid white;
+            padding-top: 32px; }
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+              header #promo nav #nav_content ul li a:hover {
+                padding-top: 20px; } }
+          header #promo nav #nav_content ul li:first-child {
+            display: none; }
+            @media only screen and (max-width: 767px) {
+              header #promo nav #nav_content ul li:first-child {
+                display: block; } }
+        header #promo nav #nav_content ol {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          width: 8.75%; }
+          @media only screen and (max-width: 767px) {
+            header #promo nav #nav_content ol {
+              width: 20%; } }
+          header #promo nav #nav_content ol li a {
+            color: #dab33c; }
+            header #promo nav #nav_content ol li a :hover {
+              color: white; }
     header #promo #header_content {
       display: flex;
       flex-direction: column;
@@ -68,27 +121,46 @@ header {
       justify-content: center;
       text-align: center;
       width: 100%;
-      height: 658px; }
+      min-height: 658px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        header #promo #header_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; } }
       header #promo #header_content #header_center {
         height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          header #promo #header_content #header_center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; } }
         header #promo #header_content #header_center h1 {
-          font-family: 'yesava';
+          font-family: 'yeseva';
           font-size: 90px;
           text-align: center;
           color: #f4F3F3; }
+          @media screen and (min-width: 768px) and (max-width: 1200px) {
+            header #promo #header_content #header_center h1 {
+              font-size: 60px; } }
+          @media only screen and (max-width: 767px) {
+            header #promo #header_content #header_center h1 {
+              font-size: 45px; } }
         header #promo #header_content #header_center #header_buttons {
           display: flex;
           flex-direction: row;
           justify-content: space-between; }
-          header #promo #header_content #header_center #header_buttons button {
+          header #promo #header_content #header_center #header_buttons a {
             font-family: "Lato";
             font-size: 18px;
             color: white;
             padding: 14px 28px; }
+          header #promo #header_content #header_center #header_buttons a:hover {
+            background-color: rgba(218, 179, 62, 0.5);
+            border: 1px solid #cc9900; }
           header #promo #header_content #header_center #header_buttons .button_book {
             background-color: rgba(0, 0, 0, 0.5);
             border: 1px solid black;
@@ -103,28 +175,71 @@ header {
   background-color: #fefefe;
   min-height: 700px;
   padding: 0 10.93%; }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    #about {
+      padding: 0 2%; } }
   #about #about_content {
     min-height: 700px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
-    #about #about_content #about_right {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      #about #about_content {
+        display: flex;
+        flex-direction: column; } }
+    #about #about_content #about_left {
       min-height: 500px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center; }
-      #about #about_content #about_right h2 {
-        font-family: "Yeseva";
-        font-size: 36px;
-        color: #cc9900; }
-      #about #about_content #about_right p {
-        font-family: "Lato";
-        font-size: 16px; }
-        #about #about_content #about_right p #about_text_center {
-          display: block;
-          text-align: center; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        #about #about_content #about_left {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; } }
+      #about #about_content #about_left #left_content {
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        #about #about_content #about_left #left_content h2 {
+          font-family: "Yeseva";
+          font-size: 36px;
+          color: #cc9900; }
+        #about #about_content #about_left #left_content p {
+          font-family: "Lato";
+          font-size: 16px;
+          width: 50%;
+          color: #4C4C4C; }
+          @media screen and (min-width: 768px) and (max-width: 1200px) {
+            #about #about_content #about_left #left_content p {
+              font-size: 20px;
+              width: 85%; } }
+          #about #about_content #about_left #left_content p #about_text_center {
+            display: block;
+            text-align: center; }
+      #about #about_content #about_left #cook {
+        display: flex;
+        width: 35%;
+        justify-content: flex-end; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          #about #about_content #about_left #cook {
+            display: flex;
+            align-items: center;
+            width: 25%; } }
+        @media only screen and (max-width: 767px) {
+          #about #about_content #about_left #cook {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: 50px; } }
+    @media only screen and (max-width: 767px) {
+      #about #about_content #about_right {
+        display: none; } }
 
 /* ------------------------ INGREDIENTS ------------------------ */
 #ingredients {
@@ -134,35 +249,60 @@ header {
   background-attachment: fixed;
   padding: 0 10.93%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center; }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    #ingredients {
+      display: flex;
+      justify-content: center; } }
+  @media only screen and (max-width: 767px) {
+    #ingredients {
+      padding: 0 4%;
+      display: flex;
+      justify-content: center; } }
   #ingredients #ingredients_content {
     min-height: 560px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      #ingredients #ingredients_content {
+        width: 80%; } }
+    @media only screen and (max-width: 767px) {
+      #ingredients #ingredients_content {
+        width: 80%; } }
     #ingredients #ingredients_content #ingredients_box {
       min-height: 400px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      width: 80%; }
+      align-items: center; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        #ingredients #ingredients_content #ingredients_box {
+          min-height: 500px; } }
       #ingredients #ingredients_content #ingredients_box h2 {
         font-family: "Yeseva";
         font-size: 36px; }
       #ingredients #ingredients_content #ingredients_box p {
         font-family: "Lato";
-        font-size: 16px; }
+        font-size: 16px;
+        color: #dde0df;
+        width: 75%; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          #ingredients #ingredients_content #ingredients_box p {
+            font-size: 20px; } }
         #ingredients #ingredients_content #ingredients_box p #ingredients_text_center {
           display: block;
           text-align: center; }
       #ingredients #ingredients_content #ingredients_box #ingredients_list {
-        width: 100%; }
+        width: 75%; }
+        @media only screen and (max-width: 767px) {
+          #ingredients #ingredients_content #ingredients_box #ingredients_list {
+            width: 90%; } }
         #ingredients #ingredients_content #ingredients_box #ingredients_list ul {
           display: flex;
           flex-direction: row;
@@ -181,6 +321,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 767px) {
+    #reviews {
+      padding: 0 2%; } }
   #reviews #reviews_content {
     background-image: url("../pictures/reviews_background_text.jpg");
     background-size: cover;
@@ -188,6 +331,12 @@ header {
     min-height: 500px;
     width: 46.9%;
     opacity: 0.9; }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      #reviews #reviews_content {
+        width: 80%; } }
+    @media only screen and (max-width: 767px) {
+      #reviews #reviews_content {
+        width: 80%; } }
     #reviews #reviews_content #reviews_background_color {
       background-color: rgba(0, 0, 0, 0.9);
       min-height: 500px;
@@ -197,21 +346,27 @@ header {
       justify-content: center;
       align-items: center; }
       #reviews #reviews_content #reviews_background_color #reviews_box {
-        height: 360px;
+        min-height: 380px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          #reviews #reviews_content #reviews_background_color #reviews_box {
+            min-height: 450px; } }
         #reviews #reviews_content #reviews_background_color #reviews_box h2 {
           font-family: "Yeseva";
           font-size: 36px; }
         #reviews #reviews_content #reviews_background_color #reviews_box #quote {
-          font-family: "Lato";
+          font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
           font-size: 25px;
-          width: 80%; }
+          width: 95%; }
+        #reviews #reviews_content #reviews_background_color #reviews_box #quote:before {
+          content: url("../pictures/reviews_quote.png");
+          padding-right: 20px; }
         #reviews #reviews_content #reviews_background_color #reviews_box #reviews_text_end {
           text-align: center;
-          font-family: 'Gentium Book Basic', 'Yeseva', sans-serif;
+          font-family: "Lato";
           font-size: 18px; }
 
 /* ------------------------ RESERVATIONS ------------------------ */
@@ -226,23 +381,49 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 10.93%;
     min-height: 650px; }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      #reservations #reservations_content {
+        padding: 0 2%;
+        display: flex;
+        justify-content: center;
+        min-height: 680px; } }
+    @media only screen and (max-width: 767px) {
+      #reservations #reservations_content {
+        padding: 0 2%;
+        display: flex;
+        justify-content: center;
+        min-height: 500px; } }
     #reservations #reservations_content #reservations_left {
       display: flex;
       flex-direction: row;
-      width: 55%;
       height: 520px;
-      justify-content: space-around;
-      align-items: center; }
+      justify-content: center; }
+      #reservations #reservations_content #reservations_left img {
+        min-height: 507px; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          #reservations #reservations_content #reservations_left img {
+            display: none; } }
+        @media only screen and (max-width: 767px) {
+          #reservations #reservations_content #reservations_left img {
+            display: none; } }
+    #reservations #reservations_content #reservations_left :first-child {
+      margin-right: 7%; }
     #reservations #reservations_content #reservations_right {
       display: flex;
       flex-direction: column;
       width: 40%;
-      height: 520px;
+      min-height: 507px;
       align-items: center;
       justify-content: space-between; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        #reservations #reservations_content #reservations_right {
+          width: 80%; } }
+      @media only screen and (max-width: 767px) {
+        #reservations #reservations_content #reservations_right {
+          width: 80%; } }
       #reservations #reservations_content #reservations_right h2 {
         font-family: "Yeseva";
         font-size: 36px;
@@ -252,68 +433,161 @@ header {
         font-size: 16px;
         color: #4c4c4c; }
       #reservations #reservations_content #reservations_right .reservations_form {
-        height: 60px;
+        min-height: 60px;
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between; }
+        justify-content: space-between;
+        color: #cc9900;
+        font-family: 'Open';
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 30px; }
+        #reservations #reservations_content #reservations_right .reservations_form .form_content {
+          min-height: 60px;
+          display: flex;
+          flex-direction: column; }
+          #reservations #reservations_content #reservations_right .reservations_form .form_content label {
+            padding-bottom: 7px; }
+          #reservations #reservations_content #reservations_right .reservations_form .form_content input {
+            padding: 5px 15px; }
+          #reservations #reservations_content #reservations_right .reservations_form .form_content input:hover {
+            border: 1px solid #cc9900; }
+      #reservations #reservations_content #reservations_right .reservations_form :first-child {
+        margin-right: 12%; }
+      #reservations #reservations_content #reservations_right .submit {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+        #reservations #reservations_content #reservations_right .submit input {
+          color: white;
+          font-family: 'Open';
+          font-size: 16px;
+          background-color: #c9a131;
+          border: none;
+          padding: 7px 50px; }
+        #reservations #reservations_content #reservations_right .submit input:hover {
+          background-color: black;
+          color: #c9a131; }
 
 /* ------------------------ FOOTER ------------------------ */
 footer {
   min-height: 320px;
   background-color: #191919;
-  padding: 0 10.93%;
+  padding: 0 13%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around; }
-  footer #column_left {
-    width: 34%; }
-  footer #column_center,
-  footer #column_right {
-    width: 21%; }
-    footer #column_center ul li a,
-    footer #column_right ul li a {
-      color: #fefefe; }
-      footer #column_center ul li a :hover,
-      footer #column_right ul li a :hover {
-        color: #cc9900; }
-  footer #column_left,
-  footer #column_center,
-  footer #column_right {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    footer {
+      padding: 0 4%; } }
+  @media only screen and (max-width: 767px) {
+    footer {
+      padding: 0 3%;
+      min-height: 250px; } }
+  @media only screen and (max-width: 767px) {
+    footer img {
+      display: none; } }
+  footer #footer_content {
+    min-height: 320px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    height: 200px; }
-    footer #column_left h3,
-    footer #column_center h3,
-    footer #column_right h3 {
-      font-family: "Yeseva";
-      font-size: 21px;
-      color: #fefefe; }
-    footer #column_left p,
-    footer #column_center p,
-    footer #column_right p {
-      font-family: "Open";
-      font-size: 16px;
-      color: white; }
-    footer #column_left .footer_bold,
-    footer #column_center .footer_bold,
-    footer #column_right .footer_bold {
-      font-family: "Open";
-      font-weight: 700;
-      font-size: 16px;
-      color: white; }
-  footer #column_center ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%; }
-  footer #column_right ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 40%; }
+    justify-content: space-between; }
+    @media only screen and (max-width: 767px) {
+      footer #footer_content {
+        width: 80%; } }
+    footer #footer_content #column_left {
+      width: 32%; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        footer #footer_content #column_left {
+          width: 30%; } }
+    footer #footer_content #column_center,
+    footer #footer_content #column_right {
+      width: 21%; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        footer #footer_content #column_center,
+        footer #footer_content #column_right {
+          width: 25%; } }
+      footer #footer_content #column_center ul li a,
+      footer #footer_content #column_right ul li a {
+        color: #fefefe; }
+        footer #footer_content #column_center ul li a :hover,
+        footer #footer_content #column_right ul li a :hover {
+          color: #cc9900; }
+    footer #footer_content #column_left,
+    footer #footer_content #column_center,
+    footer #footer_content #column_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 200px; }
+      footer #footer_content #column_left h3,
+      footer #footer_content #column_center h3,
+      footer #footer_content #column_right h3 {
+        font-family: "Yeseva";
+        font-size: 21px;
+        color: #fefefe; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          footer #footer_content #column_left h3,
+          footer #footer_content #column_center h3,
+          footer #footer_content #column_right h3 {
+            font-size: 15px; } }
+        @media only screen and (max-width: 767px) {
+          footer #footer_content #column_left h3,
+          footer #footer_content #column_center h3,
+          footer #footer_content #column_right h3 {
+            font-size: 12px; } }
+      footer #footer_content #column_left p,
+      footer #footer_content #column_left ol,
+      footer #footer_content #column_center p,
+      footer #footer_content #column_center ol,
+      footer #footer_content #column_right p,
+      footer #footer_content #column_right ol {
+        font-family: "Open";
+        font-size: 16px;
+        color: white; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          footer #footer_content #column_left p,
+          footer #footer_content #column_left ol,
+          footer #footer_content #column_center p,
+          footer #footer_content #column_center ol,
+          footer #footer_content #column_right p,
+          footer #footer_content #column_right ol {
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          footer #footer_content #column_left p,
+          footer #footer_content #column_left ol,
+          footer #footer_content #column_center p,
+          footer #footer_content #column_center ol,
+          footer #footer_content #column_right p,
+          footer #footer_content #column_right ol {
+            font-size: 10px; } }
+      footer #footer_content #column_left .footer_bold,
+      footer #footer_content #column_center .footer_bold,
+      footer #footer_content #column_right .footer_bold {
+        font-family: "Open";
+        font-weight: 700;
+        font-size: 16px;
+        color: white; }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          footer #footer_content #column_left .footer_bold,
+          footer #footer_content #column_center .footer_bold,
+          footer #footer_content #column_right .footer_bold {
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          footer #footer_content #column_left .footer_bold,
+          footer #footer_content #column_center .footer_bold,
+          footer #footer_content #column_right .footer_bold {
+            font-size: 10px; } }
+    footer #footer_content #column_center ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 50%; }
+    footer #footer_content #column_right ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%; }
 
 /*# sourceMappingURL=style.css.map */
